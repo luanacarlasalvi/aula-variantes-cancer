@@ -5,7 +5,9 @@
 
 Material da aula prática de identificação e anotação de variantes em genes de câncer: do FASTQ ao oncoplot, com FastQC, Trimmomatic, BWA, SAMtools, Picard, BCFtools, VEP e maftools.
 
-👉 **O passo a passo da aula está em [GUIA_DA_AULA.md](GUIA_DA_AULA.md).**
+👉 **Parte 1 — do FASTQ ao oncoplot:** [GUIA_DA_AULA.md](GUIA_DA_AULA.md)
+
+👉 **Parte 2 — análise de sobrevida (coorte colorretal de 500 pacientes):** [GUIA_SOBREVIDA.md](GUIA_SOBREVIDA.md)
 
 ---
 
@@ -50,7 +52,12 @@ Executa as Etapas 1 a 7 para os 12 pacientes (mostrando cada comando na tela) e 
 ## O que tem aqui
 
 ```
-├── GUIA_DA_AULA.md                 ← roteiro passo a passo
+├── GUIA_DA_AULA.md                 ← parte 1: roteiro passo a passo
+├── GUIA_SOBREVIDA.md               ← parte 2: análise de sobrevida (R)
+├── sobrevida/
+│   ├── dados/                      coorte fictícia de 500 pacientes com câncer colorretal (clínico + MAF)
+│   ├── analise_sobrevida.R         Kaplan-Meier, log-rank, Cox, maftools (todos os blocos do guia)
+│   └── funcoes_sobrevida.R         funções de gráfico usadas no guia
 ├── dados/
 │   ├── fastq/                      12 pacientes simulados (P01…P12), leituras pareadas 2×150 pb
 │   ├── amostras.txt                lista dos 12 pacientes (usada nos laços do guia)
